@@ -10,22 +10,10 @@ ul{
     list-style: none;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    overflow: hidden;
-}
-
 /* ---------------HEADER------------- */
 .header-logo {
     color: #4D5AE5;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
@@ -35,7 +23,7 @@ ul{
 
 .header-logo-part {
     color:  #2E2F42;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
@@ -57,16 +45,20 @@ ul{
    color: #404BBF;
 }
 
+.address {
+    font-style: normal;
+}
+
 .address-link {
     color: #434455;
     font-size: 16px;
     font-weight: 400;
-    font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-.address-link:hover{
+.address-link:hover,
+.address-link:focus{
    color: #404BBF;
 }
 /* --------------------------------- */
@@ -78,6 +70,7 @@ ul{
 
 .hero-title {
     color: #FFF;
+    text-align: center;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -86,12 +79,18 @@ ul{
 
 .hero-order-btn {
     color: #FFF;
+    background-color: #4D5AE5;
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+}
+
+.hero-order-btn:hover,
+.hero-order-btn:focus{
+    background-color: #404BBF;
 }
 /* --------------------------------- */
 
@@ -117,6 +116,10 @@ ul{
 
 /* --------------TEAM------------- */
 
+.team {
+    background-color: #F4F4FD;
+}
+
 .team-title {
     color: #2E2F42;
     text-align: center;
@@ -125,6 +128,10 @@ ul{
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+}
+
+.team-item {
+    background-color: #FFFFFF;
 }
 
 .team-item-title {
@@ -182,7 +189,7 @@ ul{
 
 .footer-logo {
     color: #4D5AE5;
-    font-family: Raleway;
+    font-family: Raleway,sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
@@ -192,7 +199,7 @@ ul{
 
 .footer-logo-part {
     color: #F4F4FD;
-    font-family: Raleway;
+    font-family: Raleway,sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
